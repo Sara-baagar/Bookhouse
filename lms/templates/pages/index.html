@@ -88,8 +88,10 @@ div style="direction: rtl;" class="wrapper">
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form method="POST" enctype="multipart/form-data"  > 
+            <form method="POST" enctype="multipart/form-data"  >
+            {% csrf_token %} 
               <div class="card-body"> 
+               {{form}}
                 <input type="text" class="form-control">
                 <input type="text" class="form-control">
                 <input type="text" class="form-control">
